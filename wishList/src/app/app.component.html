@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+  <h2>Wish List</h2>
+  <ul class="wish-list">
+
+    <li *ngFor="let item of items; index as i">
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="checkbox" type="checkbox" />
+          
+          {{ item.wishText }}
+        </label>
+      </div>
+    </li>
+  </ul>
+</div>
